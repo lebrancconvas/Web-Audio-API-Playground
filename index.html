@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Audio API Playground</title>
   </head>
@@ -11,8 +13,8 @@
       <h1>Web Audio API Playground</h1>
     </header>
     <div id="control">
-      <button id="play">Play</button>
-      <button id="pause">Pause</button>
+      <button type="button" id="play" class="nes-btn is-success">Play</button>
+      <button type="button" id="pause" class="nes-btn is-error">Pause</button>
     </div>
     <script type="module" src="./src/main.ts"></script>
   </body>
