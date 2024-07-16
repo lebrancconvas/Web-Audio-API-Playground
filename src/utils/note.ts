@@ -15,6 +15,6 @@ export function note(ctx: AudioContext, freq: number, wait: number, duration: nu
   osc.stop(ctx.currentTime + wait + duration);
 };
 
-export function midiToFreq(n: number) {
-  return 440 * Math.pow(2, (n - 69) / 12);
-}
+export function midiToFreq(n: number, octave: number) {
+  return 440 * Math.pow(2, (((n + (octave * 12)) - 69) / 12));
+};
